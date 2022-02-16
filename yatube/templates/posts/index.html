@@ -23,7 +23,7 @@
     </li>
   </ul>
   <p>{{ post.text }}</p>    
-  <a href="{%url 'posts:index'%}{{post.group.slug}}">все записи группы: {{post.group.title}}</a>
+  <a href="{%url 'posts:index'%}group/{{post.group.slug}}">все записи группы: {{post.group.title}}</a>
   {% if not forloop.last %}<hr>{% endif %}
 {% endfor %} 
 </article>   
